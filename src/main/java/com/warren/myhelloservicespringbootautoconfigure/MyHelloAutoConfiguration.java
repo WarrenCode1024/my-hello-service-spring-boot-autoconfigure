@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @ConditionalOnClass(MyHelloService.class)
 public class MyHelloAutoConfiguration {
 
+
     // 3. 只有当用户没有自己定义 MyHelloService Bean 时，才创建默认 Bean
     @Bean
     @ConditionalOnMissingBean
